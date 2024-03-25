@@ -1,0 +1,40 @@
+ .productSize{
+    padding: 70px 7px 0px 7px;
+
+  text-align: center;
+    
+}
+.productSize-table{
+  margin: 20px auto 10px auto;
+  background-color:  #f0f0f0;
+  padding: 3px;
+}
+.productSize-bolt{
+   font-weight: bold;
+   font-size: 25px;
+  }
+  .productSizeText{
+    display: inline-block;
+text-align: center;
+    max-width: 900px;
+  }
+th, td {
+  padding: 1px 2px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+.line{
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 2.5px;
+  border-radius: 10px;
+}
+@media only screen and (min-width: 480px) {
+  th, td {
+    padding: 4px 10px;
+    font-size: 20px;
+  }
+}

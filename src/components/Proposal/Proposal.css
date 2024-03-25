@@ -1,0 +1,125 @@
+.proposal-section {
+  margin-top: 480px;
+padding-bottom: 50px;
+}
+
+.proposal-list {
+  display: flex;
+  padding: 10px 10px 20px 10px;
+  gap: 120px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.proposal-item {
+  position: relative;
+  z-index: 3;
+  width: 320px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.proposal-item-text{
+  margin-top: 30px;
+  font-size: 25px;
+  text-indent: 2ch;
+  text-align: left;
+}
+.proposal-item::before {
+  display: block;
+  content: '';
+  transform: translate(-5%, -3%);
+  background-color: #eedec7;
+  width: 95%;
+  height: 110%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  padding: 0 25px;
+}
+.proposal-allPrice {
+  position: relative;
+  margin: 100px auto 80px auto;
+  width:100%;
+}
+.proposal-price {
+  position: absolute;
+  bottom: 21px;
+  left: 60px;
+  text-decoration: line-through;
+}
+.proposal-todayPrice {
+  position: absolute;
+  right: 60px;
+  bottom: 21px;
+}
+.price-text {
+
+  color: antiquewhite;
+}
+.proposal-img{
+  border: 7px solid white;
+   width: 320px;
+}
+.proposal-text{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 30px;
+}
+.proposal-button{
+    display: block;
+    margin: 70px auto 50px auto;
+    width: 300px;
+    height: 50px;
+    background-color: #f5c231;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 480px) {
+  .proposal-allPrice {
+    margin-top: 100px;
+    width: 470px;
+  }
+  .proposal-item {
+ 
+   width: 340px;
+  }
+  .proposal-price {
+    bottom: 30px;
+    left: 80px;
+  }
+  .proposal-todayPrice {
+    right: 75px;
+    bottom:  25px;
+  }
+  .price-text {
+   font-size: 26px;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .proposal-section {
+    margin-top: 0px;
+  }
+  .proposal-list {
+  gap: 100px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding:200px 30px 200px 30px;
+  }
+  .proposal-allPrice {
+    margin-top: 0px;
+   width: 800px;
+  }
+  .proposal-price {
+    bottom: 65px;
+    left: 160px;
+  }
+  .proposal-todayPrice {
+    right: 150px;
+    bottom:  50px;
+  }
+  .price-text {
+   font-size: 35px;
+  }
+}
